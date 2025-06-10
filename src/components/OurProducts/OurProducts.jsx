@@ -16,43 +16,23 @@ import { useInView } from "react-intersection-observer";
 const products = [
   {
     id: 1,
-    title: "Sportswear - Knits & Wovens Fabrics",
+    title: "Sportswear Fabrics",
     image: ourmostpopuproduct1,
   },
   {
     id: 2,
-    title: "Casual Wear - Cotton Fabric",
+    title: "Comfort Wear Fabrics",
     image: ourmostpopuproduct2,
   },
   {
     id: 3,
-    title: "Formal Wear - Polyester Fabrics",
+    title: "Knitted Jacquard",
     image: ourmostpopuproduct3,
   },
   {
     id: 4,
-    title: "Activewear - Spandex Fabrics",
+    title: "Woven Fabrics",
     image: ourmostpopuproduct4,
-  },
-  {
-    id: 5,
-    title: "Outerwear - Wool Fabrics",
-    image: category1,
-  },
-  {
-    id: 6,
-    title: "Outerwear - Wool Fabrics",
-    image: category2,
-  },
-  {
-    id: 7,
-    title: "Outerwear - Wool Fabrics",
-    image: category3,
-  },
-  {
-    id: 8,
-    title: "Outerwear - Wool Fabrics",
-    image: category4,
   },
 ];
 
