@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-item_viewdproduct {
+    width: 95% !important;
+    box-shadow: 4px 7px 12px -6px black;
+    margin: 27px 169px;
+}
+
+.countact_usFiled {
+    border: 1px solid black;
+    padding: 13px;
+    border-radius: 4px;
+}
+
+.inquiryform {
+    background: white;
+    box-shadow: 0px 1px 7px -3px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.visioncard {
+    background: #ffffff24;
+    box-shadow: 0px 0px 14px 1px #ffffff87;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.box_shadow_black{
+    box-shadow: 2px 5px 9px 2px #000000c4;
+}
+
+.careersapply {
+    background: white;
+    padding: 15px;
+    box-shadow: 0px 1px 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+span.lazy-load-image-background.blur.lazy-load-image-loaded {
+    width: 100% !important;
+}
+
+
+/* photo frame */
+/* Container for the whole frame */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  /* Heading styling */
+  .container h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Canvas styling */
+  canvas {
+    border: 2px solid #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields for image uploads */
+  .upload-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .upload-container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .upload-container label {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+  }
+  
+  .upload-container input[type="file"] {
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.85em;
+  }
+  
+  
+
+@media only screen and (max-width: 768px) {
+    .slider-item_viewdproduct {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .slider-item_viewdproduct {
+        margin: 0 0;
+        width: 100% !important;
+    }
+}
