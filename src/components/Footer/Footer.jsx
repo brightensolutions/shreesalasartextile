@@ -1,27 +1,33 @@
-import { useEffect, useState } from "react"
-import { Link, useLocation } from "react-router-dom"
-import { logo, logoWhite } from "../Images/Images"
-import { FaInstagram, FaFacebookSquare, FaYoutube, FaPhoneSquare, FaWhatsapp } from "react-icons/fa"
-import { FaLocationDot } from "react-icons/fa6"
+import { useEffect, useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { logo, logoWhite } from "../Images/Images";
+import {
+  FaInstagram,
+  FaFacebookSquare,
+  FaYoutube,
+  FaPhoneSquare,
+  FaWhatsapp,
+} from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 const Footer = () => {
-  const location = useLocation()
-  const [activeLink, setActiveLink] = useState("")
-  const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false)
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState("");
+  const [isWhatsAppOpen, setIsWhatsAppOpen] = useState(false);
 
   const navItems = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/aboutus" },
     { name: "Our Product", path: "/products" },
-    { name: "Event & Trade Show", path: "/events" },
-    { name: "Blogs", path: "/blogs" },
-    { name: "Career", path: "/career" },
+    { name: "Our Certification", path: "/certification" },
+    // { name: "Blogs", path: "/blogs" },
+    // { name: "Career", path: "/career" },
     { name: "Contact Us", path: "/contact" },
-  ]
+  ];
 
   useEffect(() => {
-    setActiveLink(location.pathname)
-  }, [location])
+    setActiveLink(location.pathname);
+  }, [location]);
 
   return (
     <>
@@ -31,25 +37,35 @@ const Footer = () => {
             {/* Company Info */}
             <div className="text-left">
               <Link to="/">
-                <img src={logo || "/placeholder.svg"} alt="shree salasar textiles" className="w-[250px]" />
+                <img
+                  src={logo || "/placeholder.svg"}
+                  alt="shree salasar textiles"
+                  className="w-[250px]"
+                />
               </Link>
               <p className="text-gray-300 mt-[15px] font-tomorrow text-left">
-                We are committed to transform ourselves into a renowned textile company across the globe by establishing
-                strong network of clients with support of our young & highly talented professionals, aiming for a turnover
-                of 500 Crores by the year 2025.
+                We are committed to transform ourselves into a renowned textile
+                company across the globe by establishing strong network of
+                clients with support of our young & highly talented
+                professionals, aiming for a turnover of 500 Crores by the year
+                2025.
               </p>
             </div>
 
             {/* Quick Links */}
             <div className="text-left">
-              <h2 className="text-white font-bold font-tomorrow text-[22px] mb-[20px]">Quick Links</h2>
+              <h2 className="text-white font-bold font-tomorrow text-[22px] mb-[20px]">
+                Quick Links
+              </h2>
               <ul className="flex flex-col gap-y-[15px]">
                 {navItems.map((item, index) => (
                   <li key={index}>
                     <Link
                       to={item.path}
                       className={`text-[16px] font-medium font-tomorrow transition duration-300 ${
-                        activeLink === item.path ? "text-blue-500" : "text-gray-300"
+                        activeLink === item.path
+                          ? "text-blue-500"
+                          : "text-gray-300"
                       } hover:text-blue-400`}
                     >
                       {item.name}
@@ -61,7 +77,9 @@ const Footer = () => {
 
             {/* Contact Info */}
             <div className="text-left">
-              <h2 className="text-white font-bold font-tomorrow text-[22px] mb-[20px]">Contact Us</h2>
+              <h2 className="text-white font-bold font-tomorrow text-[22px] mb-[20px]">
+                Contact Us
+              </h2>
               <div className="flex flex-col gap-[25px]">
                 {/* Social Media */}
                 <div className="flex gap-[15px]">
@@ -127,7 +145,9 @@ const Footer = () => {
 
                 {/* Associate Office */}
                 <div>
-                  <p className="text-white mb-[10px] font-bold">ASSOCIATE OFFICE</p>
+                  <p className="text-white mb-[10px] font-bold">
+                    ASSOCIATE OFFICE
+                  </p>
                   <div className="flex items-start gap-[15px]">
                     <FaLocationDot className="text-[30px] text-gray-300" />
                     <div>
@@ -156,31 +176,36 @@ const Footer = () => {
             to="https://brightensolutions.com/"
             className="text-gray-300 font-tomorrow text-[16px] hover:text-blue-400 transition duration-300"
           >
-            © {new Date().getFullYear()} Brighten Solutions. All rights reserved.
+            © {new Date().getFullYear()} Brighten Solutions. All rights
+            reserved.
           </Link>
         </div>
       </div>
 
-        {/* WhatsApp Floating Button */}
+      {/* WhatsApp Floating Button */}
       <div className="fixed bottom-6 right-6 z-50">
         <div className="relative">
           {/* WhatsApp Numbers Popup */}
-          <div className={`absolute bottom-16 right-0 bg-white rounded-lg shadow-lg p-4 transition-all duration-300 ${
-            isWhatsAppOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'
-          }`}>
+          <div
+            className={`absolute bottom-16 right-0 bg-white rounded-lg shadow-lg p-4 transition-all duration-300 ${
+              isWhatsAppOpen
+                ? "opacity-100 scale-100"
+                : "opacity-0 scale-95 pointer-events-none"
+            }`}
+          >
             <div className="flex flex-col gap-3 min-w-[200px]">
-              <a 
-                href="https://wa.me/919825055595" 
-                target="_blank" 
+              <a
+                href="https://wa.me/919825055595"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-700 hover:text-green-600 transition-colors"
               >
                 <FaWhatsapp className="text-xl" />
                 <span>+91 98250 55595</span>
               </a>
-              <a 
-                href="https://wa.me/917229055595" 
-                target="_blank" 
+              <a
+                href="https://wa.me/917229055595"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-gray-700 hover:text-green-600 transition-colors"
               >
@@ -202,7 +227,7 @@ const Footer = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
