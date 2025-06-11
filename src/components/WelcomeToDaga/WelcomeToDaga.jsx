@@ -54,7 +54,7 @@ const WelcomeToDaga = () => {
               Welcome to Shree Salasar Textiles.
             </h1>
             <p className="font-tomorrow text-[18px] font-medium">
-              Spirits of Fabrics
+              SPIRIT OF FABRICS
             </p>
             <div className="mt-[15px] flex flex-col gap-y-[10px]">
               <p className="font-roboto font-normal text-[18px] leading-[30px]">
