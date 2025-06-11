@@ -68,7 +68,7 @@ const WelcomeToDaga = () => {
             </div>
 
             <Link className="inline-block mt-[15px] bg-black py-[10px] px-[30px] rounded-lg font-semibold font-tomorrow text-white">
-              Read More{" "}
+              Read More{"/about"}
               <span>
                 <i className="fa fa-angle-right" aria-hidden="true"></i>
               </span>
