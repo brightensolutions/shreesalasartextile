@@ -13,21 +13,20 @@ import FabricFunctions from "./components/FabricFunctions/FabricFunctions";
 import PhotoFrame from "./components/PhotoFrame/PhotoFrame";
 const App = () => {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/products" element={<OurProducts />} />
-        <Route path="/events" element={<EventTradeShow />}/>
+        {/* <Route path="/events" element={<EventTradeShow />}/>
         <Route path="/blogs" element={<Blogs />}/>
-        <Route path="/career" element={<Careers />}/>
-        <Route path="/contact" element={<ContactUs />}/>
-        <Route path="/fabricfunctions" element={<FabricFunctions />}/>
-        <Route path="/PhotoFrame" element={<PhotoFrame />}/>
+        <Route path="/career" element={<Careers />}/> */}
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/fabricfunctions" element={<FabricFunctions />} />
+        <Route path="/PhotoFrame" element={<PhotoFrame />} />
       </Routes>
       <Footer />
-        
     </BrowserRouter>
   );
 };
