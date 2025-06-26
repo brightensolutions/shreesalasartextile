@@ -5,6 +5,7 @@ import {
   category2,
   category3,
   category4,
+  category5,
 } from "../Images/Images";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
@@ -36,6 +37,12 @@ const OurCategories = () => {
       img: category4,
       link: "/enquire-outdoorwear",
     },
+    {
+      id: 5,
+      title: "T-Shirt",
+      img: category5,
+      link: "/enquire-outdoorwear",
+    },
   ];
 
   const PrevArrow = ({ onClick }) => (
@@ -60,7 +67,7 @@ const OurCategories = () => {
     dots: false,
     infinite: true,
     speed: 1000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
@@ -106,19 +113,25 @@ const OurCategories = () => {
             <Slider {...settings}>
               {categories.map((category) => (
                 <div key={category.id} className="m-[15px]">
-                  <div>
-                    <div
-                      className="img h-[450px] bg-cover bg-center bg-slate-500"
-                      style={{ backgroundImage: `url(${category.img})` }}
-                    ></div>
-                    <div className="mt-[10px]">
+                  <div className="rounded overflow-hidden shadow-lg">
+                    {/* ✅ Category image with consistent aspect ratio */}
+                    <div className="h-[650px] w-full overflow-hidden rounded">
+                      <img
+                        src={category.img}
+                        alt={category.title}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+
+                    {/* ✅ Category details */}
+                    <div className="mt-[10px] text-center">
                       <h1 className="font-tomorrow text-[22px] font-semibold">
                         {category.title}
                       </h1>
 
                       <Link
                         to={category.link}
-                        className="inline-block border-b-[1px] pb-[5px] text-[18px] mt-[10px]"
+                        className="inline-block border-b-[1px] pb-[5px] text-[18px] mt-[10px] text-blue-600 hover:text-blue-800 transition-colors"
                       >
                         Enquire Now
                       </Link>

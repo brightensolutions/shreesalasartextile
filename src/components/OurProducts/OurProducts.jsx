@@ -5,6 +5,7 @@ import {
   category2,
   category3,
   category4,
+  category5,
   ourmostpopuproduct1,
   ourmostpopuproduct2,
   ourmostpopuproduct3,
@@ -17,22 +18,27 @@ const products = [
   {
     id: 1,
     title: "Sportswear Fabrics",
-    image: ourmostpopuproduct1,
+    image: category1,
   },
   {
     id: 2,
     title: "Comfort Wear Fabrics",
-    image: ourmostpopuproduct2,
+    image: category2,
   },
   {
     id: 3,
     title: "Knitted Jacquard",
-    image: ourmostpopuproduct3,
+    image: category3,
   },
   {
     id: 4,
     title: "Woven Fabrics",
-    image: ourmostpopuproduct4,
+    image: category4,
+  },
+  {
+    id: 5,
+    title: "T-Shirt",
+    image: category5,
   },
 ];
 
@@ -82,7 +88,7 @@ const ProductCard = ({ product }) => {
       className="border-[1px] rounded-sm flex flex-col hover:shadow-lg hover:scale-[1.05] transition-transform duration-300"
     >
       <div
-        className="bg-slate-400 h-[350px] bg-cover bg-center rounded-t-sm"
+        className="bg-slate-400 h-[500px] bg-cover bg-center rounded-t-sm"
         style={{ backgroundImage: `url(${product.image})` }}
       ></div>
       <div className="p-[10px] flex flex-col justify-between bg-slate-200 h-[100px]">

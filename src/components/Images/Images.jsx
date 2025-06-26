@@ -9,6 +9,7 @@ import category1 from "./category1.jpg";
 import category2 from "./category2.jpg";
 import category3 from "./category3.jpg";
 import category4 from "./category4.jpg";
+import category5 from "./category5.png";
 import ActiveWear from "./ActiveWear.jpg";
 import ourmostpopuproduct1 from "./ourmostpopuproduct1.webp";
 import ourmostpopuproduct2 from "./ourmostpopuproduct2.webp";
@@ -40,62 +41,87 @@ import Ipllogo from "./IPL-PNG-520x355.png";
 import ALCIS from "./ALCIS.avif";
 import Parx from "./parx.jpeg";
 import Lotto_Sport_Italia_logo from "./Lotto_Sport_Italia_logo.svg.png";
-import Whatshapp from "./whatsapp.png"
+import Whatshapp from "./whatsapp.png";
 import slider1 from "./slider/05-daga-fabric.jpg";
 import slider2 from "./slider/01-daga-fabric.jpg";
 import slider3 from "./slider/02-daga-fabric.jpg";
 import slider4 from "./slider/03-daga-fabric.jpg";
 import slider5 from "./slider/04-daga-fabric.jpg";
 import expo1 from "./expo.jpg";
-
+import msv1 from "./msv1.png";
+import msv2 from "./msv2.png";
+import msv3 from "./msv3.png";
+import msv4 from "./msv4.png";
+import msv5 from "./msv5.png";
+import msv6 from "./msv6.png";
+import msv7 from "./msv7.png";
+import msv8 from "./msv8.png";
+import msv9 from "./msv9.png";
+import msv10 from "./msv10.png";
+import msv11 from "./msv11.png";
+import msv12 from "./msv12.png";
+import msv13 from "./msv13.png";
 
 export {
-    expo1,
-    slider1,
-    slider2,
-    slider3,
-    slider4,
-    slider5,
-    Whatshapp,
-    Lotto_Sport_Italia_logo,
-    Parx,
-    ALCIS,
-    Ipllogo,
-    sportsun,
-    shivnaresh,
-    partner3,
-    partner2,
-    partner,
-    logoWhite,
-    logo,
-    FunctionalFabric1,
-    FunctionalFabric2,
-    FunctionalFabric3,
-    FunctionalFabric4,
-    FunctionalFabric5,
-    FunctionalFabric6,
-    fabricfunctions,
-    Hangtags1,
-    Hangtags2,
-    Hangtags3,
-    logowhite,
-    galary1,
-    bgoverlapping,
-    dagabanner,
-    wallart,
-    menuicon,
-    sliderbg1,
-    sliderbg2,
-    aboutusimg,
-    category1,
-    category2,
-    category3,
-    category4,
-    ActiveWear,
-    ourmostpopuproduct1,
-    ourmostpopuproduct2,
-    ourmostpopuproduct3,
-    ourmostpopuproduct4,
-    aboutus,
-    aboutimg
-}
+  expo1,
+  slider1,
+  slider2,
+  slider3,
+  slider4,
+  slider5,
+  Whatshapp,
+  Lotto_Sport_Italia_logo,
+  Parx,
+  ALCIS,
+  Ipllogo,
+  sportsun,
+  shivnaresh,
+  partner3,
+  partner2,
+  partner,
+  logoWhite,
+  logo,
+  FunctionalFabric1,
+  FunctionalFabric2,
+  FunctionalFabric3,
+  FunctionalFabric4,
+  FunctionalFabric5,
+  FunctionalFabric6,
+  fabricfunctions,
+  Hangtags1,
+  Hangtags2,
+  Hangtags3,
+  logowhite,
+  galary1,
+  bgoverlapping,
+  dagabanner,
+  wallart,
+  menuicon,
+  sliderbg1,
+  sliderbg2,
+  aboutusimg,
+  category1,
+  category2,
+  category3,
+  category4,
+  category5,
+  ActiveWear,
+  ourmostpopuproduct1,
+  ourmostpopuproduct2,
+  ourmostpopuproduct3,
+  ourmostpopuproduct4,
+  aboutus,
+  aboutimg,
+  msv1,
+  msv2,
+  msv3,
+  msv4,
+  msv5,
+  msv6,
+  msv7,
+  msv8,
+  msv9,
+  msv10,
+  msv11,
+  msv12,
+};
